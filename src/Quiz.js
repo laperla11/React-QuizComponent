@@ -11,11 +11,10 @@ class Quiz extends Component {
         };
     };
 
-    showNextQuestion = () => {
-        this.setState({
-            quiz_position : this.state.quiz_position + 1
+    showNextQuestion () {
+        this.setState((prevState)=>{
+            return { quiz_position : prevState.quiz_position + 1}
         })
-
     }
 
   render() {

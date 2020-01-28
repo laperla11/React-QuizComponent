@@ -8,12 +8,10 @@ class QuizQuestion extends Component {
     };
   }
 
-  handleClick = buttonText => {
-      buttonText === this.props.quiz_question.answer
-        ? this.props.showNextQuestionHandler()
-        : null;
-
-
+  handleClick (buttonText) {
+      if(buttonText === this.props.quiz_question.answer){
+          this.props.showNextQuestionHandler();
+      }
   }
 
   render() {

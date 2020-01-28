@@ -8,9 +8,8 @@ class QuizQuestionButton extends Component {
     };
   }
 
-  handleClick = (e) => {
-      console.log('clicked the button----', e.target.value);
-      console.log(this.props.clickHandler());
+  handleClick  () {
+      this.props.clickHandler(this.props.button_text);
   }
 
   render() {
