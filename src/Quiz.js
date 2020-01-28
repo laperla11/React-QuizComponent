@@ -1,7 +1,5 @@
-import React, { useState, Fragment } from "react";
-import quizData from './quiz_data.json'
-
-
+import React, { Component, useState, Fragment } from "react";
+let quizData  = require('./quiz_data.json');
 
 function Quiz () {
 const [quiz_question, setQuiz_question] = useState(1);
